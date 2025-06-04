@@ -1,0 +1,29 @@
+//font family
+
+/* (font1) font titulos
+Bebas Neue", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* (font2) font varios "Oswald", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+$brown: #884A39;
+$mclaro: #C38154;
+$beige: #FFC26F;
+$clear: #F9E0BB; 
+
+
+//Font
+
+$font1: "Bebas Neue", sans-serif; 
+$font2: "Oswald", sans-serif; 
+
+@mixin flex ($flex, $direction, $align, $gap) {
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+    gap: $gap;
+}

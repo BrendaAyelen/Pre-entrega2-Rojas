@@ -1,0 +1,28 @@
+@use "./variables" as*;
+
+.reservas{
+    p {
+        text-align: center;
+    margin: 30px 10px;}
+    nav
+    { display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    .button{
+    font-family: $font1;
+    color: $brown;
+    background-color: coral;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: solid 3px grey;
+
+    &:hover{
+            background-color: rgb(59, 59, 59);
+    }
+    }}
+
+}

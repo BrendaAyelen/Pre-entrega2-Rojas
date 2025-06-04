@@ -1,0 +1,27 @@
+ @use "./variables" as*;
+ 
+body{
+    background-color:$beige;
+    display: flex;
+    flex-direction: column;
+
+    .home{
+    text-align: center;
+    text-shadow: -1px 3px 2px rgba(65, 25, 25, 0.6);
+    background-image: url(../imagenes/background2.jpg);
+    background-size: cover;
+    padding: 5px;
+    
+    h1{ 
+    font-family: $font1;
+    color: $beige;
+    text-align: center;
+    margin: 1rem;
+    }
+
+    p{
+        font-family: $font2;
+        color: $beige;
+    }
+}
+}

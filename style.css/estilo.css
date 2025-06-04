@@ -56,7 +56,7 @@ header li{
 
 /*nav*/
 
-.tamaño{ 
+/* .tamaño{ 
     width: 100%;
     background-color: #884A39
 }
@@ -74,7 +74,7 @@ header li{
 header img{
     width: 70px;
     height: auto;
-}
+} */
 
 body{ 
     background-color:#F9E0BB;
@@ -102,15 +102,6 @@ h1{
     background-size: cover;
     padding: 5px;
     
-}
-
-
-.imagenes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-    align-items: center;
-    margin: 15px;
 }
 
 .conten-grid{
@@ -293,7 +284,7 @@ footer{
 }
 
 footer p{
-     font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: #FFC26F;
     text-align: end;
 }

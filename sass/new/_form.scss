@@ -1,0 +1,50 @@
+@use "./variables" as*;
+
+.form{
+    
+    .rrhh{ 
+    color: $mclaro; 
+    font-family: $font2;
+    text-align: center; }
+    .rrhh1{
+    color: $mclaro;
+    font-family: $font2;
+    text-align: center;
+    margin: 20px;
+    }
+    .contenedorform{
+    background-color: $brown;
+    border-radius: 10px;
+    border-color: none;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+        .formulario{
+            @include flex (flex, column, center, 10px);
+            color: $beige;
+            font-family: $font1;
+        }
+    }
+    .botonenviar{
+    display: inline-block;
+    background-color: aliceblue;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+        &:hover{
+            background-color: #c5c2bd;
+        }
+    }
+    input{
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    }
+    p{
+    font-family: $font2;
+    color: $mclaro;
+    padding: 10px;
+    }
+}

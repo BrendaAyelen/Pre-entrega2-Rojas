@@ -1,0 +1,21 @@
+@use "./variables" as*;
+
+.tamaño{
+    width: 100%;
+    background-color: $brown; 
+
+    .color a
+    { font-family: $font1;
+    color: $beige; 
+    font-size: x-large;
+    }
+
+    .nav-link:hover { 
+        color: $clear;
+
+    }
+}
+header img{
+     width: 70px;
+    height: auto;
+}

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* (font1) font titulos
+Bebas Neue", sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* (font2) font varios "Oswald", sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #884A39;
+  text-align: center;
+  margin: 1rem;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.tamaño {
+  width: 100%;
+  background-color: #884A39;
+}
+.tamaño .color a {
+  font-family: "Bebas Neue", sans-serif;
+  color: #FFC26F;
+  font-size: x-large;
+}
+.tamaño .nav-link:hover {
+  color: #F9E0BB;
+}
+
+header img {
+  width: 70px;
+  height: auto;
+}
+
+footer {
+  background-color: #884A39;
+  margin-top: 20px;
+}
+footer p {
+  font-family: "Bebas Neue", sans-serif;
+  color: #FFC26F;
+  text-align: end;
+}
+footer article {
+  display: flex;
+  flex-direction: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer article img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+}
+
+body {
+  background-color: #FFC26F;
+  display: flex;
+  flex-direction: column;
+}
+body .home {
+  text-align: center;
+  text-shadow: -1px 3px 2px rgba(65, 25, 25, 0.6);
+  background-image: url(../imagenes/background2.jpg);
+  background-size: cover;
+  padding: 5px;
+}
+body .home h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #FFC26F;
+  text-align: center;
+  margin: 1rem;
+}
+body .home p {
+  font-family: "Oswald", sans-serif;
+  color: #FFC26F;
+}
+
+.conten-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "imagen1 imagen1 texto1" "texto2 imagen2 imagen2";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 400px 400px;
+  gap: 20px;
+}
+.conten-grid img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.conten-grid .titulo-grid {
+  grid-area: titulo;
+}
+.conten-grid .img1-grid {
+  grid-area: imagen1;
+  margin-left: 10px;
+}
+.conten-grid .us1-grid {
+  grid-area: texto1;
+  font-size: larger;
+}
+.conten-grid .us2-grid {
+  grid-area: texto2;
+  font-size: larger;
+}
+.conten-grid .img2-grid {
+  grid-area: imagen2;
+  margin-right: 10px;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 30px;
+  height: auto;
+}
+
+.form .rrhh {
+  color: #C38154;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+.form .rrhh1 {
+  color: #C38154;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.form .contenedorform {
+  background-color: #884A39;
+  border-radius: 10px;
+  border-color: none;
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
+}
+.form .contenedorform .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #FFC26F;
+  font-family: "Bebas Neue", sans-serif;
+}
+.form .botonenviar {
+  display: inline-block;
+  background-color: aliceblue;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form .botonenviar:hover {
+  background-color: #c5c2bd;
+}
+.form input {
+  display: flex;
+  border: 2px solid gray;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+.form p {
+  font-family: "Oswald", sans-serif;
+  color: #C38154;
+  padding: 10px;
+}
+
+.reservas p {
+  text-align: center;
+  margin: 30px 10px;
+}
+.reservas nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.reservas nav .button {
+  font-family: "Bebas Neue", sans-serif;
+  color: #884A39;
+  background-color: coral;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: solid 3px grey;
+}
+.reservas nav .button:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+@media (max-width: 480px) {
+  /*nosotros*/
+  .body {
+    width: 100%;
+    height: auto;
+  }
+  .body .conten-grid {
+    grid-template-areas: "titulo" "texto1" "imagen1" "texto2" "imagen2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 300px 400px 200px 400px;
+    gap: 15px;
+  }
+  .us1-grid {
+    margin: 20px;
+    text-align: center;
+  }
+  .us2-grid {
+    margin: 20px;
+    text-align: center;
+  }
+  .img1-grid {
+    margin: 5px;
+  }
+  .img2-grid {
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

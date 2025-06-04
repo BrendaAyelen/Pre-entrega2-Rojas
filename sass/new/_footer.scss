@@ -1,0 +1,23 @@
+@use "./variables" as*;
+
+footer{
+    background-color: $brown;
+    margin-top: 20px;
+    p{
+    font-family: $font1;
+    color: #FFC26F;
+    text-align: end;
+
+    }
+
+    article{
+        @include flex(flex, flex-end, flex-start, 15px);
+        
+        img{ margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+
+        }
+    }
+}
