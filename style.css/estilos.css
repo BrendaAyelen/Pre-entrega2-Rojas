@@ -220,7 +220,7 @@ body .home p {
     display: grid;
     grid-template-areas: "titulo" "texto1" "imagen1" "texto2" "imagen2";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 300px 400px 300px 400px;
+    grid-template-rows: 50px 300px 400px 400px 400px;
     gap: 15px;
   }
   body .conten-grid .us1-grid, body .conten-grid .us2-grid {
