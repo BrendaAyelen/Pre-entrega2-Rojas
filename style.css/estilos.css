@@ -25,6 +25,7 @@ h1 {
 p {
   font-family: "Oswald", sans-serif;
   text-align: center;
+  color: #884A39;
 }
 
 .tamaño {
@@ -95,7 +96,7 @@ body .home p {
   grid-template-areas: "titulo titulo titulo" "imagen1 imagen1 texto1" "texto2 imagen2 imagen2";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 400px 400px;
-  gap: 20px;
+  gap: 30px;
 }
 .conten-grid img {
   width: 100%;
@@ -137,18 +138,19 @@ body .home p {
   color: #C38154;
   font-family: "Oswald", sans-serif;
   text-align: center;
+  margin: 20px;
 }
 .form .rrhh1 {
   color: #C38154;
   font-family: "Oswald", sans-serif;
   text-align: center;
-  margin: 20px;
+  margin: 30px;
 }
 .form .contenedorform {
   background-color: #884A39;
   border-radius: 10px;
   border-color: none;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   width: 40%;
 }
@@ -156,7 +158,7 @@ body .home p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   color: #FFC26F;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -210,28 +212,22 @@ body .home p {
 
 @media (max-width: 480px) {
   /*nosotros*/
-  .body {
+  body {
     width: 100%;
     height: auto;
   }
-  .body .conten-grid {
+  body .conten-grid {
+    display: grid;
     grid-template-areas: "titulo" "texto1" "imagen1" "texto2" "imagen2";
     grid-template-columns: 1fr;
     grid-template-rows: 50px 300px 400px 200px 400px;
     gap: 15px;
   }
-  .us1-grid {
+  body .conten-grid .us1-grid, body .conten-grid .us2-grid {
     margin: 20px;
     text-align: center;
   }
-  .us2-grid {
-    margin: 20px;
-    text-align: center;
-  }
-  .img1-grid {
-    margin: 5px;
-  }
-  .img2-grid {
+  body .conten-grid .img1-grid, body .conten-grid .img2-grid {
     margin: 5px;
   }
 }

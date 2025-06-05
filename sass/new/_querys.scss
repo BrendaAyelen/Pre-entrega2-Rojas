@@ -1,16 +1,17 @@
 @use "./variables" as*;
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
  /*nosotros*/
 
- .body{
+body{
     width: 100%;
     height: auto;
 
  .conten-grid{
+    display: grid;
     grid-template-areas: 
-    
+
 "titulo"
 "texto1"
 "imagen1"
@@ -20,23 +21,16 @@
 grid-template-columns: 1fr;
 grid-template-rows: 50px 300px 400px 200px 400px;
 gap: 15px;
+
+
+.us1-grid, .us2-grid {
+    margin: 20px;
+    text-align: center;
+}
+
+.img1-grid, .img2-grid {
+    margin: 5px;
+}
  }
 }
-
-.us1-grid{
-    margin: 20px;
-    text-align: center;
 }
-
-.us2-grid{
-    margin: 20px;
-    text-align: center;
-}
-
-.img1-grid{
-    margin: 5px;
-}
-
-.img2-grid{
-    margin: 5px;
-} }

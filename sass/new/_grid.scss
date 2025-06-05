@@ -9,7 +9,7 @@
     "texto2 imagen2 imagen2";
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 100px 400px 400px;
-    gap: 20px;
+    gap: 30px;
 
     img{
     width: 100%;
@@ -32,11 +32,13 @@
 .us1-grid{
     grid-area: texto1;
     font-size: larger;
+    
 }
 
 .us2-grid{
     grid-area: texto2;
     font-size: larger;
+    
 }
 
 .img2-grid{

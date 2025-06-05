@@ -5,22 +5,23 @@
     .rrhh{ 
     color: $mclaro; 
     font-family: $font2;
-    text-align: center; }
+    text-align: center; 
+    margin: 20px;}
     .rrhh1{
     color: $mclaro;
     font-family: $font2;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     }
     .contenedorform{
     background-color: $brown;
     border-radius: 10px;
     border-color: none;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     width: 40%;
         .formulario{
-            @include flex (flex, column, center, 10px);
+            @include flex (flex, column, center, 20px);
             color: $beige;
             font-family: $font1;
         }
